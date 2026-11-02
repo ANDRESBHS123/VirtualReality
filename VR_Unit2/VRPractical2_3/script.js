@@ -1,6 +1,7 @@
 let rnd = (l,u) => Math.floor(Math.random()*(u-l) + l);
 let scene;
 
+
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene"); //CSS Selector
 
@@ -8,6 +9,7 @@ window.addEventListener("DOMContentLoaded",function() {
     let x = rnd(-20,20);
     let z = rnd(-20,20);
     let tree = new Tree(x, 0 , z);
+    let cloud = new Cloud(x, 0 , z);
   }
 
 })
