@@ -22,6 +22,10 @@ window.addEventListener("DOMContentLoaded",function() {
   cloud = new Cloud(-5,10,-1);
 
   //Challenge 3: Create an array to store 100 snowflakes in random positions
+  let snowflakes = [];
+  for(let i = 0; i < 100; i++){
+    let snowflakes = Snowflake();
+  }
 
   loop();
 })
@@ -32,7 +36,7 @@ function loop(){
   }
   cloud.fly();
   //Challenge 2: Traverse your array of clouds and make each cloud fly
-
+  
   //Challenge 4: Traverse your array of snowflakes and make each snowflake fall
   
   window.requestAnimationFrame( loop );
