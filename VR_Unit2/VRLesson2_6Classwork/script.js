@@ -1,11 +1,14 @@
 let scene;
+let mechTemplate;
+let army = [];
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
   
-  mech = document.getElementById("mech-1");
- 
-  loop();
+  mechTemplate = document.getElementById("mech-1");
+  
+  let mech1 = new Mech(-10,13)
+  // loop();
 })
 function loop(){
 
